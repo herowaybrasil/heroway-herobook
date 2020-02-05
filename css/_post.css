@@ -1,0 +1,199 @@
+.post {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px rgba(82, 109, 194, 0.1);
+  margin-bottom: 30px;
+}
+
+.post > .post-header {
+  display: flex;
+  align-items: center;
+}
+
+.post > .post-header .post-header-image-board {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 1px 1px 10px rgba(82, 109, 194, 0.1);
+}
+
+.post > .post-header .post-header-image-board img {
+  width: 100%;
+  height: auto;
+}
+
+.post > .post-header .post-header-profile-name {
+  margin-left: 10px;
+}
+
+.post > .post-header .post-header-profile-name .profile-name {
+  cursor: pointer;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.post > .post-header .post-header-profile-name .post-date {
+  font-size: 0.75rem;
+}
+
+.post > .post-content {
+  margin: 20px 0;
+}
+
+.post > .post-image .post-image-board {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.post > .post-image img {
+  width: 100%;
+  min-width: 400px;
+
+}
+
+.post > .post-action {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.post > .post-action .post-like-icon,
+.post > .post-action .post-comment-icon
+{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.post > .post-action .post-like-icon svg,
+.post > .post-action .post-comment-icon svg {
+  max-width: 16px;
+  width: 100%;
+  margin-right: 5px;
+  fill: #7f8f94;
+  transition: all 0.4s ease-in-out;
+}
+
+.post > .post-action .post-like-icon span,
+.post > .post-action .post-comment-icon span {
+  font-size: 0.77rem;
+  height: 10px;
+  color: #7f8f94;
+  transition: color 0.4s ease-in-out;
+}
+
+.post > .post-action .post-like-icon:hover svg,
+.post > .post-action .post-comment-icon:hover svg {
+  transform: rotate(0deg);
+  fill: #516d77;
+}
+
+.post > .post-action .post-like-icon:hover span,
+.post > .post-action .post-comment-icon:hover span {
+  color: #516d77;
+}
+
+
+.post > .post-action .post-like-icon.liked svg,
+.post > .post-action .post-comment-icon.commented svg {
+  fill: #FF4167;
+}
+
+.post > .post-action .post-like-icon.liked span,
+.post > .post-action .post-comment-icon.commented span {
+  color: #516d77;
+
+}
+
+.post > .post-action .post-like-icon.liked:hover svg {
+  transform: rotate(180deg);
+  fill: #7f8f94;
+
+}
+
+.post > .post-action .post-like-icon.liked:hover span,
+.post > .post-action .post-comment-icon.commented:hover span {
+  color: #516d77;
+}
+
+.post > .post-comments .comment-image-board {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px rgba(82, 109, 194, 0.1);
+
+}
+
+
+.post > .post-comments .comment-image-board img {
+  width: 100%;
+  height: auto;
+}
+
+.post > .post-comments .comment {
+  display: flex;
+  padding: 10px;
+  background-color: #f8f8f8;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.post > .post-comments .comment .comment-profile-image {
+  margin-right: 10px;
+}
+
+.post > .post-comments .comment .comment-profile-name {
+  cursor: pointer;
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.post > .post-comments .comment .comment-text {
+  font-size: 0.88rem;
+}
+
+.post > .post-send-comment .post-send-form {
+  position: relative;
+  width: 100%;
+}
+
+.post > .post-send-comment .post-send-form input {
+  width: 100%;
+  border-radius: 40px;
+  border: 0;
+  height: 40px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  margin-top: 10px;
+  color: #516d77;
+}
+
+.post > .post-send-comment .post-send-form input:focus,
+.post > .post-send-comment .post-send-form input:active {
+  outline: none;
+}
+
+.post > .post-send-comment .post-send-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}

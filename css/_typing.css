@@ -1,0 +1,46 @@
+.typing {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  border-radius: 20px;
+  padding: 8px;
+  background: #ff4167;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.typing.active {
+  transform: scale(1);
+}
+
+.typing .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  margin-right: 3px;
+  background: #fff;
+  animation: wave 1s linear infinite;
+}
+
+.typing .dot:nth-child(2) {
+  animation-delay: -0.9s;
+}
+
+.typing .dot:nth-child(3) {
+  animation-delay: -0.7s;
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: initial;
+  }
+
+  30% {
+    transform: translateY(-5px);
+  }
+}
