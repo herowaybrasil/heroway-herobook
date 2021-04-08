@@ -7,7 +7,7 @@
   z-index: 15;
   border-radius: 20px;
   padding: 8px;
-  background: #ff4167;
+  background: var(--pink);
   transform: scale(0);
   transition: all 0.3s ease-in-out;
 }
@@ -16,12 +16,12 @@
   transform: scale(1);
 }
 
-.typing .dot {
+.typing > .dot {
   width: 6px;
   height: 6px;
   border-radius: 100%;
   margin-right: 3px;
-  background: #fff;
+  background: var(--base-light);
   animation: wave 1s linear infinite;
 }
 
@@ -31,6 +31,7 @@
 
 .typing .dot:nth-child(3) {
   animation-delay: -0.7s;
+  margin-right: 0px;
 }
 
 @keyframes wave {

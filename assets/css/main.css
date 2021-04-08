@@ -1,5 +1,4 @@
 .main {
-  position: relative;
   display: flex;
   margin-top: 50px;
   min-height: calc(100vh - 50px);
@@ -7,12 +6,13 @@
 
 .main > .feed {
   width: calc(100% - 350px);
-  background-color: #F5F6FB;
+  background-color: var(--base-dark);
 }
 
 .main > .feed > .container {
-  width: 72%;
+  width: 80%;
   margin: 50px auto;
+  max-width: 1000px;
 }
 
 
@@ -32,10 +32,6 @@
     min-width: 299px;
   }
 
-  .main > .feed > .container {
-    width: 90%;
-  }
-
   .main > .profile {
       display: none;
   }
@@ -46,10 +42,6 @@
     width: 100%;
   }
 
-  .main > .feed > .container {
-    width: 90%;
-  }
-
   .main > .profile {
     display: none;
   }
@@ -58,10 +50,6 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
   .main > .feed {
     width: calc(100% - 280px);
-  }
-
-  .main > .feed > .container {
-    width: 90%;
   }
 
   .main > .profile {

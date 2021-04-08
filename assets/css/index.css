@@ -1,0 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Varela+Round';
+
+@import './header.css';
+@import './main.css';
+@import './login.css';
+@import './post.css';
+@import './profile.css';
+@import './typing.css';
+
+:root {
+  --base-dark: #000;
+  --base-light: #fff;
+  --pink: #FC1B53;
+  --gray-1: #191919;
+  --gray-2: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: 'Varela Round';
+  color: #516d77;
+}
+
+@media (max-width: 575.98px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}

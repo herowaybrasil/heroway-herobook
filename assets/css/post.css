@@ -1,6 +1,6 @@
 .post {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--gray-1);
   padding: 20px;
   border-radius: 6px;
   box-shadow: 1px 1px 10px rgba(82, 109, 194, 0.1);
@@ -13,8 +13,8 @@
 }
 
 .post > .post-header .post-header-image-board {
-  width: 35px;
-  height: 35px;
+  width: 48px;
+  height: 48px;
   border-radius: 100%;
   overflow: hidden;
 
@@ -27,11 +27,14 @@
 
 .post > .post-header .post-header-image-board img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .post > .post-header .post-header-profile-name {
   margin-left: 10px;
+  color: var(--base-light);
 }
 
 .post > .post-header .post-header-profile-name .profile-name {
@@ -44,7 +47,8 @@
 }
 
 .post > .post-content {
-  margin: 20px 0;
+  color: var(--base-light);
+  margin: 15px 0;
 }
 
 .post > .post-image .post-image-board {
@@ -60,7 +64,6 @@
 .post > .post-image img {
   width: 100%;
   min-width: 400px;
-
 }
 
 .post > .post-action {
@@ -94,38 +97,25 @@
   transition: color 0.4s ease-in-out;
 }
 
-.post > .post-action .post-like-icon:hover svg,
-.post > .post-action .post-comment-icon:hover svg {
-  transform: rotate(0deg);
-  fill: #516d77;
-}
 
-.post > .post-action .post-like-icon:hover span,
-.post > .post-action .post-comment-icon:hover span {
-  color: #516d77;
+.post > .post-action .post-like-icon svg,
+.post > .post-action .post-comment-icon svg {
+  fill: var(--base-light);
 }
-
 
 .post > .post-action .post-like-icon.liked svg,
 .post > .post-action .post-comment-icon.commented svg {
-  fill: #FF4167;
+  fill: var(--pink);
+}
+
+.post > .post-action .post-like-icon.liked:hover svg,
+.post > .post-action .post-comment-icon.commented:hover svg {
+  transform: scale(1.1);
 }
 
 .post > .post-action .post-like-icon.liked span,
 .post > .post-action .post-comment-icon.commented span {
-  color: #516d77;
-
-}
-
-.post > .post-action .post-like-icon.liked:hover svg {
-  transform: rotate(180deg);
-  fill: #7f8f94;
-
-}
-
-.post > .post-action .post-like-icon.liked:hover span,
-.post > .post-action .post-comment-icon.commented:hover span {
-  color: #516d77;
+  color: var(--base-light);
 }
 
 .post > .post-comments .comment-image-board {
@@ -138,19 +128,20 @@
   align-items: center;
   justify-content: center;
   box-shadow: 1px 1px 10px rgba(82, 109, 194, 0.1);
-
 }
-
 
 .post > .post-comments .comment-image-board img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .post > .post-comments .comment {
   display: flex;
   padding: 10px;
-  background-color: #f8f8f8;
+  background-color: var(--gray-2);
+  color: var(--base-light);
   margin-bottom: 10px;
   border-radius: 6px;
 }
@@ -181,15 +172,11 @@
   border: 0;
   height: 40px;
   padding: 15px;
-  background-color: #f8f8f8;
   margin-top: 10px;
-  color: #516d77;
+  background-color: var(--base-light);
+  color: var(--base-dark);
 }
 
-.post > .post-send-comment .post-send-form input:focus,
-.post > .post-send-comment .post-send-form input:active {
-  outline: none;
-}
 
 .post > .post-send-comment .post-send-form button {
   position: absolute;
