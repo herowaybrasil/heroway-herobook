@@ -1,0 +1,16 @@
+:root {
+  --base-dark: #000;
+  --base-light: #fff;
+  --pink: #FC1B53;
+  --gray-1: #191919;
+  --gray-2: #333333;
+
+  --header-height: 50px;
+  --profile-width: 350px;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --profile-width: 260px;
+  }
+}

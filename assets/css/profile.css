@@ -1,4 +1,9 @@
 .profile {
+  width: var(--profile-width);
+  flex-basis: var(--profile-width);
+  min-height: 100vh;
+  padding: 50px;
+  z-index: 5;
   box-shadow: 1px 1px 10px rgba(82, 109, 194, 0.1);
   background-color: var(--gray-1);
 }
@@ -32,12 +37,12 @@
   color: var(--base-light);
 }
 
-.profile > .profile-info {
+.profile > .profile-stats {
   display: flex;
   margin: 20px 0;
 }
 
-.profile > .profile-info > div {
+.profile > .profile-stats > div {
   flex: 4;
   display: flex;
   flex-direction: column;
@@ -45,11 +50,11 @@
   justify-content: center;
 }
 
-.profile > .profile-info > div > span:nth-child(1) {
+.profile > .profile-stats > div > span:nth-child(1) {
   color: var(--pink);
 }
 
-.profile > .profile-info > div > span:nth-child(2) {
+.profile > .profile-stats > div > span:nth-child(2) {
   font-size: 0.66rem;
   text-transform: uppercase;
   padding: 5px;

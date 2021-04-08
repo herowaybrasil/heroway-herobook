@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 50px;
+  height: var(--header-height);
   background-color: var(--pink);
   position: fixed;
   top: 0;
@@ -12,11 +12,9 @@
 }
 
 .header > .logo {
-  width: 50px;
-  height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .header > .logo img {
@@ -25,16 +23,15 @@
 }
 
 .header > .logout {
-  width: 50px;
-  height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-right: 10px;
 }
 
 .header > .logout button {
-  background: transparent;
   border: 0;
+  background: transparent;
   color: var(--base-light);
   cursor: pointer;
 }

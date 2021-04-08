@@ -1,0 +1,11 @@
+.posts {
+  background-color: var(--base-dark);
+  flex-basis: calc(100% - var(--profile-width));
+  width: calc(100% - var(--profile-width));
+}
+
+.posts > .container {
+  width: 80%;
+  margin: 30px auto;
+  max-width: 1000px;
+}
