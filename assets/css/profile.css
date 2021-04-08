@@ -6,6 +6,8 @@
   z-index: 5;
   box-shadow: 1px 1px 10px rgba(82, 109, 194, 0.1);
   background-color: var(--gray-1);
+  position: fixed;
+  right: 0;
 }
 
 .profile > .profile-image {
