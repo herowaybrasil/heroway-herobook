@@ -1,6 +1,6 @@
 .feed {
   display: flex;
-  margin-top: var(--header-height);
+  padding-top: var(--header-height);
 }
 
 /* @media (max-width: 992px) {
