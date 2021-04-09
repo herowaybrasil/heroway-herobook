@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": "5fd44bf3-f159-42eb-9014-ebe490610912",
+      "content": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend id massa quis condimentum. Maecenas malesuada, mi id tempus consequat, ex nunc rhoncus arcu, at vehicula lorem mi eu magna.",
+      "date": 1617926869849,
+      "name": "Batman",
+      "image": "./assets/img/batman-profile.png",
+      "likes": 3,
+      "postImage": "./assets/img/batman-post.jpg",
+      "comments": [
+        {
+          "id": "7509f012-5a0b-4742-8de6-6bbf6b6d548c",
+          "image": "./assets/img/spider-man.png",
+          "name": "Spider Man",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend id massa quis condimentum"
+        }
+      ]
+    }
+  ]
+}
